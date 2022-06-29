@@ -1,4 +1,31 @@
-/* Common  ============== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ededed;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
 
 .section {
   padding-top: 50px;
@@ -10,38 +37,40 @@ p {
   color: #777;
 }
 
-/* Header ============== */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
+/* Header ============== */
 .header {
   background-color: #fff;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
-
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.logo {
+.header .logo {
   display: inline-block;
   padding: 1rem 0;
 }
-
-.main-nav__item {
+.header .main-nav__item {
   display: none;
 }
 
 /* Phill section  ================ */
-.phill__subtitle {
+.phill .subtitle {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 12px;
 }
-
-.phill__title {
+.phill .title {
   font-size: 1.3rem;
   text-transform: uppercase;
 }
@@ -51,20 +80,21 @@ p {
   background-color: #fafafa;
   text-align: center;
 }
+
 .services__title {
   font-size: 2rem;
   font-weight: bolder;
 }
+
 .s-card__icon {
   font-size: 1.7rem;
   margin-bottom: 0.8em;
   margin-top: 0.8em;
 }
+
 .s-card__title {
   font-weight: normal;
 }
-
-/* Responsive  */
 
 @media screen and (min-width: 600px) {
   .main-nav__item {
@@ -72,14 +102,17 @@ p {
     padding: 0.5em 1em;
     /* background-color: #f4f4f4; */
   }
+
   .main-nav__burger {
     display: none;
   }
+
   .services-cards-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
   }
+
   .s-card {
     flex-basis: 48%;
     flex-grow: 1;
@@ -92,7 +125,8 @@ p {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
+
   .s-card {
     flex-basis: 30%;
   }
-}
+}/*# sourceMappingURL=main.css.map */
